@@ -28,30 +28,34 @@ public class day3 {
 	
 	@Test
 	public void WebLoginCarLoan() {
-		System.out.println("weblogincar day3");
+		System.out.println("WebLoginCarLoan day3");
 	}
 	
 	@Test(groups={"Smoke"})
 	public void MobileLoginCarLoan() {
-		System.out.println("mobilelogincar day3");
+		System.out.println("MobileLoginCarLoan day3");
 	}
 	
 	@Test
 	public void MobileLoginCarLoan1() {
-		System.out.println("mobilelogincar day3");
+		System.out.println("MobileLoginCarLoan1 day3");
 	}
 	
 	@Test
 	public void MobileLoginCarLoan2() {
-		System.out.println("mobilelogincar day3");
+		System.out.println("MobileLoginCarLoan2 day3");
 	}
 	
 	
 	@Test
 	public void LoginAPICarLoan() {
-		System.out.println("loginlogincar day3");
+		System.out.println("LoginAPICarLoan day3");
 	}
 	
+	@Test(dependsOnMethods = {"WebLoginCarLoan"})
+	public void APICarLoan() {
+		System.out.println("APICarLoan day3");
+	}
 	@AfterTest
 	private void LastTest() {
 		System.out.println("LastTest day3");

@@ -19,13 +19,13 @@ public class day1 {
 
 	}
 	
-	@Test
+	@Test(enabled = false)
 	private void FirstTest() {
 		System.out.println("Hello day1");
 
 	}
 	
-	@Test
+	@Test(timeOut = 4000)
 	private void SecondTest() {
 		System.out.println("Bye day1");
 
