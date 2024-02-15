@@ -5,9 +5,14 @@ import org.testng.annotations.Test;
 public class day1 {
 	
 	@Test
-	private void demo() {
-		// TODO Auto-generated method stub
+	private void Test() {
 		System.out.println("Hello");
+
+	}
+	
+	@Test
+	private void SecondTest() {
+		System.out.println("Bye");
 
 	}
 }
