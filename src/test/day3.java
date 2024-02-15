@@ -1,10 +1,24 @@
 package test;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class day3 {
+	
+	@BeforeClass
+	private void BeforeClass() {
+		System.out.println("BeforeClass day3");
+
+	}
+	
+	@AfterClass
+	private void AfterClass() {
+		System.out.println("AfterClass day3");
+
+	}
 	
 	@BeforeTest
 	private void beforetest() {
@@ -17,7 +31,7 @@ public class day3 {
 		System.out.println("weblogincar day3");
 	}
 	
-	@Test
+	@Test(groups={"Smoke"})
 	public void MobileLoginCarLoan() {
 		System.out.println("mobilelogincar day3");
 	}

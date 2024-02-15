@@ -11,7 +11,7 @@ public class day2 {
 
 	}
 	
-	@Test
+	@Test(groups={"Smoke"})
 	public void name() {
 		System.out.println("Hi hi day2");
 	}

@@ -25,7 +25,7 @@ public class day4 {
 
 	}
 	
-	@Test
+	@Test(groups={"Smoke"})
 	public void WebLoginCarLoan() {
 		System.out.println("weblogincar day4");
 	}
